@@ -1,38 +1,101 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.pri {
+  background: linear-gradient(90deg, #672280, #a626d3);
+}
+/* HEADER */
+.navbar {
+  justify-content: space-between;
+  padding: 30px;
+  color: #fff;
+  /* background-color: #672280; */
+}
+
+.header-img {
+  margin-right: 10px;
+  width: 30px;
+  height: 100%;
+}
+.main {
+  padding: 50px;
+}
+
+/* FORM */
+.sb {
+  justify-content: space-between;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.text-box {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.randomImg {
+  width: 100%;
+  height: 100%;
+}
+
+.meme {
+  width: 590px;
+  height: 320px;
+  /* border: 7px solid #946ff3; */
+  border-radius: 8px;
+  /* box-shadow: 9px 9px 18px 2px rgba(31, 8, 63, 0.58); */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 60px auto;
+}
+
+#top-text,
+#bottom-text {
+  /* color: #000; */
+  /* margin: auto; */
+  width: 100%;
+  /* color: #b38c00; */
+  font-weight: 800;
+  /* text-shadow: 2px 2px 1px black; */
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  stroke: black;
+  font-size: 1.8rem;
+  text-transform: none;
+  position: absolute;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#top-text {
+  top: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#bottom-text {
+  bottom: 5%;
 }
